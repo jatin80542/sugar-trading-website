@@ -1,0 +1,69 @@
+/* ============================================================
+   MERIDIAN CANE — DESIGN SYSTEM / TOKENS
+   Change a value here and it changes everywhere on the site.
+   ============================================================ */
+:root {
+  /* --- Colour ------------------------------------------------ */
+  --c-white:      #FFFFFF;   /* primary background            */
+  --c-ivory:      #F8F6F2;   /* secondary background          */
+  --c-charcoal:   #333333;   /* main text                     */
+  --c-gold:       #C5A24A;   /* primary accent — used sparingly */
+  --c-brown:      #6A4A2B;   /* secondary accent (raw sugar)  */
+
+  /* derived neutrals (kept minimal, all from the palette above) */
+  --c-ink:        #1E1C19;   /* deep charcoal: footer, headings */
+  --c-muted:      #6E6A63;   /* secondary text                */
+  --c-line:       #E5E0D7;   /* hairline rules                */
+  --c-line-soft:  #EFEBE3;
+  --c-gold-soft:  rgba(197, 162, 74, 0.14);
+  --c-brown-soft: #F1EBE3;
+
+  /* --- Type -------------------------------------------------- */
+  --f-display: "Source Serif 4", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --f-body:    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --f-mono:    "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --fs-eyebrow: 0.6875rem;  /* 11px  mono, tracked           */
+  --fs-xs:      0.8125rem;  /* 13px                          */
+  --fs-sm:      0.9375rem;  /* 15px                          */
+  --fs-base:    1.0625rem;  /* 17px  body                    */
+  --fs-lg:      1.25rem;    /* 20px  lead paragraph          */
+  --fs-h4:      1.375rem;
+  --fs-h3:      1.75rem;
+  --fs-h2:      clamp(1.875rem, 1.2rem + 2.2vw, 3rem);
+  --fs-h1:      clamp(2.25rem, 1.3rem + 3.6vw, 4.25rem);
+  --fs-display: clamp(2.5rem, 1.2rem + 5vw, 5.25rem);
+
+  --lh-tight: 1.08;
+  --lh-head:  1.18;
+  --lh-body:  1.7;
+  --tracking-eyebrow: 0.16em;
+
+  /* --- Layout ------------------------------------------------ */
+  --container:      1280px;
+  --container-text: 760px;   /* controlled measure for prose  */
+  --gutter:         clamp(1.25rem, 4vw, 3.5rem);
+
+  /* --- Spacing scale ----------------------------------------- */
+  --s-1: 0.25rem;  --s-2: 0.5rem;   --s-3: 0.75rem;  --s-4: 1rem;
+  --s-5: 1.5rem;   --s-6: 2rem;     --s-7: 3rem;     --s-8: 4rem;
+  --s-9: 6rem;     --s-10: 8rem;
+  --section-y: clamp(4rem, 8vw, 8rem);
+
+  /* --- Borders / radii / shadow ------------------------------ */
+  --radius:    2px;          /* deliberately restrained       */
+  --radius-lg: 3px;
+  --border:    1px solid var(--c-line);
+  --shadow-sm: 0 1px 2px rgba(30, 28, 25, 0.05);
+  --shadow-md: 0 12px 40px -18px rgba(30, 28, 25, 0.28);
+
+  /* --- Motion ------------------------------------------------ */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --t-fast: 160ms;
+  --t-base: 320ms;
+  --t-slow: 720ms;
+
+  --header-h: 76px;
+}
+
+@media (max-width: 768px) { :root { --header-h: 64px; } }
